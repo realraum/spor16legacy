@@ -1,0 +1,21 @@
+Source: libparportled
+Priority: optional
+Maintainer: Julien Danjou <acid@debian.org>
+Build-Depends: debhelper (>> 4.0.0)
+Standards-Version: 3.6.2.2
+
+Package: libparportled-dev
+Section: libdevel
+Architecture: i386 amd64 kfreebsd-i386 kfreebsd-amd64
+Depends: libparportled (= ${Source-Version})
+Description: manage an LED device plugged on a parallel port - development files
+ This is a library intended to manage an LED device plugged on parallel port.
+ You can turn on and off LED, set a specificate state or do blinking an LED.
+
+Package: libparportled
+Section: libs
+Architecture: i386 amd64 kfreebsd-i386 kfreebsd-amd64
+Depends: ${shlibs:Depends}
+Description: manage an LED device plugged on a parallel port
+ This is a library intended to manage an LED device plugged on parallel port.
+ You can turn on and off LED, set a specificate state or do blinking an LED.

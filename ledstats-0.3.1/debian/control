@@ -1,0 +1,13 @@
+Source: ledstats
+Section: utils
+Priority: optional
+Maintainer: Julien Danjou <acid@debian.org>
+Build-Depends: debhelper (>> 4.0.0), libparportled-dev (>= 0.3)
+Standards-Version: 3.6.2.2
+
+Package: ledstats
+Architecture: i386 amd64 kfreebsd-i386 kfreebsd-amd64
+Depends: ${shlibs:Depends}
+Description: show CPU usage on an LED device plugged on parallel port
+ This program shows you your current CPU usage by turning one to eight LED
+ on an LED device. It also uses the last LED to simulate a heartbeat.

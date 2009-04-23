@@ -1,0 +1,64 @@
+ledstats (0.3.1-5) unstable; urgency=low
+
+  * Add kfreebsd-amd64 to supported architectures (Closes: #361620) 
+  * Bump standards version to 3.6.2.2
+  * Use debhelper >> 4
+
+ -- Julien Danjou <acid@debian.org>  Sun,  9 Apr 2006 13:53:20 +0200
+
+ledstats (0.3.1-4) unstable; urgency=low
+
+  * Add kfreebsd-i386 to supported architectures (Closes: #314443) 
+
+ -- Julien Danjou <acid@debian.org>  Wed,  3 Aug 2005 15:58:24 +0200
+
+ledstats (0.3.1-3) unstable; urgency=low
+
+  * Update description (Closes: #299990) 
+
+ -- Julien Danjou <acid@debian.org>  Sun, 20 Mar 2005 15:28:49 +0100
+
+ledstats (0.3.1-2) unstable; urgency=low
+
+  * Add support for amd64 (Closes: #253538)
+
+ -- Julien Danjou <acid@debian.org>  Sat, 26 Jun 2004 20:45:17 +0200
+
+ledstats (0.3.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #210556) 
+
+ -- Julien Danjou <acid@debian.org>  Wed,  8 Oct 2003 22:39:05 +0200
+
+ledstats (0.3-1) unstable; urgency=low
+
+  * NMU ack
+  * New upstream release
+  * No more deps on a dev package !
+  * Bump Standards-Version to 3.6.1.0
+  * Include documentation about device (Closes: #186913)
+
+ -- Julien Danjou <acid@debian.org>  Wed, 20 Aug 2003 13:28:39 +0200
+
+ledstats (0.1-1.1) unstable; urgency=low
+
+  * NMU (fixing 2 months old easy RC bug)
+  * debian/control:
+    + applied patch from #173526, adds a build-dependency on
+      libparportled-dev (>= 0.1) (closes: #173526).
+    + Uncapitalize description.
+    + Bump Standards-Version to 3.5.10.
+    + Remove duplicate dependency on libparportled. This library should
+      eventually use a shlib file.
+  * debian/copyright:
+    + s/Author(s)/Author/ to make lintian happy.
+    + Add path to the GPL file in /usr/share/common-licenses.
+
+ -- Julien BLACHE <jblache@debian.org>  Fri,  6 Jun 2003 09:18:41 +0200
+
+ledstats (0.1-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #168859)
+
+ -- Julien Danjou <acid@debian.org>  Mon, 18 Nov 2002 23:45:58 +0100
+

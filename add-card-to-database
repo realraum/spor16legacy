@@ -1,0 +1,16 @@
+
+i=1
+while [ $i -gt 0 ]; do
+	opensc-tool --serial > /dev/null 2>&1
+	i=$?
+	if [ $i -gt 0 ]; then
+		echo "Please insert card...."
+		sleep 5
+	else
+		opensc-tool --serial | \
+		perl -ne 's/[^0-9A-F]//g; $_ = substr($_,0,32); print "$_\n"' \
+		>> card-database
+	fi
+done 
+	
+

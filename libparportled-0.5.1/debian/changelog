@@ -1,0 +1,61 @@
+libparportled (0.5.1-6) unstable; urgency=low
+
+  * Add kfreebsd-amd64 to supported architectures (Closes: #361615)
+
+ -- Julien Danjou <acid@debian.org>  Sun,  9 Apr 2006 13:52:59 +0200
+
+libparportled (0.5.1-5) unstable; urgency=low
+
+  * Change to debhelper >> 4
+  * Bump standards version
+
+ -- Julien Danjou <acid@debian.org>  Sun,  9 Apr 2006 13:44:03 +0200
+
+libparportled (0.5.1-4) unstable; urgency=low
+
+  * Add kfreebsd-i386 to supported architectures (Closes: #314384) 
+
+ -- Julien Danjou <acid@debian.org>  Wed,  3 Aug 2005 15:56:40 +0200
+
+libparportled (0.5.1-3) unstable; urgency=low
+
+  * Update description (Closes: #300014, #300015) 
+
+ -- Julien Danjou <acid@debian.org>  Sun, 20 Mar 2005 15:16:26 +0100
+
+libparportled (0.5.1-2) unstable; urgency=low
+
+  * Add support for amd64 arch (Closes: #252755) 
+
+ -- Julien Danjou <acid@debian.org>  Sat,  5 Jun 2004 01:20:43 +0200
+
+libparportled (0.5.1-1) unstable; urgency=low
+
+  * New upstream release 
+
+ -- Julien Danjou <acid@debian.org>  Wed,  8 Oct 2003 22:38:21 +0200
+
+libparportled (0.5-1) unstable; urgency=low
+
+  * New upstream release 
+
+ -- Julien Danjou <acid@debian.org>  Tue,  9 Sep 2003 18:16:24 +0200
+
+libparportled (0.4-1) unstable; urgency=low
+
+  * New upstream version 
+
+ -- Julien Danjou <acid@debian.org>  Mon,  8 Sep 2003 17:39:16 +0200
+
+libparportled (0.3-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Julien Danjou <acid@debian.org>  Sun, 13 Apr 2003 16:51:52 +0200
+
+libparportled (0.1-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #168859)
+
+ -- Julien Danjou <acid@debian.org>  Mon, 18 Nov 2002 23:45:02 +0100
+

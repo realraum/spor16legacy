@@ -1,0 +1,34 @@
+# Generated automatically from Makefile.in by configure.
+# LED Status makefile created by Jeremy Garff
+# List of sources, objects, and program.
+
+OBJS	= ledcpu.o
+PROG	= ledstats
+
+# List of compiling options.
+
+CC	= gcc
+CFLAGS	= -g -Wall 
+LDFLAGS = -lpthread -lparportled
+
+prefix = /usr/local
+exec_prefix = ${prefix}
+sbindir = ${exec_prefix}/sbin
+
+# Linking the executable.
+
+$(PROG): $(OBJS)	
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $(OBJS)
+
+# Cleanup (removes files that can be rebuilt).
+
+clean:
+	-rm -f $(PROG) $(OBJS) *~
+	-rm -f Makefile config.cache config.log config.status
+
+install:
+	install -c -d $(sbindir)
+	install -c ledstats $(sbindir)
+
+uninstall:
+	rm -f $(sbindir)/ledstats

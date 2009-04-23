@@ -1,0 +1,13 @@
+This package was debianized by Julien Danjou <acid@debian.org> on
+Wed, 13 Nov 2002 00:21:10 +0100.
+
+It was downloaded from http://jdanjou.org/libparportled/
+
+Upstream Author: Julien Danjou <julien@jdanjou.org>
+
+Copyright:
+
+ledstats is placed under GPL.
+
+On Debian systems, the complete text of the GNU General Public License can
+be found in the file /usr/share/common-licenses/GPL.

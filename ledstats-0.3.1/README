@@ -1,0 +1,21 @@
+This version of ledstats is based on ledstatus 0.1 by Jeremy Garff.
+It uses libparportled to run.
+
+Julien Danjou
+<julien@jdanjou.org>
+
+The device used:
+                                pin 20 (ground)
+                                  |
+               150ohm     LED     |
+pin 2 (D0) ----/\/\/------|>|-----+
+                                  |
+pin 3 (D1) ----/\/\/------|>|-----+
+                                  |
+pin 4 (D2) ----/\/\/------|>|-----+
+
+            [...]
+                                  |
+pin 9 (D7) ----/\/\/------|>|-----+
+
+

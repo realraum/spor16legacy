@@ -1,0 +1,27 @@
+# Process this file with autoconf to produce a configure script.
+AC_INIT(ledcpu.c, 0.3, julien@jdanjou.org)
+
+# Checks for programs.
+AC_PROG_CC
+
+# Checks for libraries.
+# FIXME: Replace `main' with a function in `-lpthread':
+AC_CHECK_LIB([pthread], [pthread_create])
+AC_CHECK_LIB([parportled], [led_setperm])
+
+# Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS([stdlib.h unistd.h sys/io.h parportled.h])
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+# Checks for library functions.
+AC_CHECK_FUNCS(malloc)
+
+# Checks for options
+
+dnl Checks for programs.
+AC_PROG_INSTALL
+
+dnl AC_CONFIG_FILES([Makefile])
+AC_OUTPUT(Makefile)

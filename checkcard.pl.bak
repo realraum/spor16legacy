@@ -1,0 +1,40 @@
+#!/usr/bin/perl
+
+print `/root/ledoff`;
+my %validcards;
+
+while (<>)
+{ 
+  my ($cardid,$name)= split /\s+/,$_;
+  $validcards{$cardid}=$name;
+};
+
+
+my $logfile;
+
+open($logfile,'>>/var/log/tuer.log');
+
+my $tuer=0;
+while (sleep 3)
+{
+  my $card=`/usr/bin/opensc-tool --serial 2>/dev/null`;
+  $card =~ s/[^0-9A-F]//g; 
+  $card = substr($card,0,32);
+  next if not $card;
+  if ($validcards{$card})
+  {
+    $tuer = not $tuer;
+    if ($tuer)
+    {
+      print `/root/ledon`;
+      system('cat /var/www/indexopen.html > /var/www/index.html');
+      print $logfile localtime()." ".$validcards{$card}." hat die Tuer geoeffnet\n";
+    } else {
+      print `/root/ledoff`;
+      system('cat /var/www/indexclosed.html > /var/www/index.html');
+      print $logfile localtime()." ".$validcards{$card} ." hat die Tuer verschlossen\n";
+    }
+  } else {
+    print "Card did not match $card\n";
+  }
+}
